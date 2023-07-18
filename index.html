@@ -2,14 +2,15 @@
 <html lang="pt-br">
 
 <head>
+  <title>Home</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home</title>
   <link rel="stylesheet" href="./style.css">
+  <script src="./script.js"></script>
 </head>
 
 <body>
@@ -23,53 +24,99 @@
     </ul>
   </header>
 
-  <div>
-
-    <div class="produtos">
-      <div>
-        <img src="./img/prod1.PNG" alt="corrente">
-      </div>
-      <div class="descprod">
-        <h1 style="color: #410287;">LOREM IPSUM</h1>
-        <h2 style="color: #946DBF;">R$ 99,99</h2>
-        <p style="color: #7335A0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur, mi nec
-          efficitur lacinia, dui dolor
-          malesuada magna, in viverra nulla orci in neque. Donec lobortis dui pellentesque lorem aliquam, non ornare
-          metus
-          ultrices. Sed tempus, lacus ut bibendum vulputate, nisi lectus dapibus ipsum, quis vestibulum nunc libero id
-          urna.</p>
+  <main>
+    <div>
+      <h1 class="titulo-secao"> EM DESTAQUE</h1>
+      <div class="produtos">
         <div>
+          <img src="./img/prod1.PNG" alt="corrente">
         </div>
-        <button class="quero">
-          Quero!
-        </button>
+        <div class="descprod">
+          <h1 style="color: #410287;">LOREM IPSUM</h1>
+          <h2 style="color: #946DBF;">R$ 99,99</h2>
+          <p style="color: #7335A0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur, mi nec
+            efficitur lacinia, dui dolor
+            malesuada magna, in viverra nulla orci in neque. Donec lobortis dui pellentesque lorem aliquam, non ornare
+            metus
+            ultrices. Sed tempus, lacus ut bibendum vulputate, nisi lectus dapibus ipsum, quis vestibulum nunc libero id
+            urna.</p>
+          <div>
+          </div>
+          <button id="produto1" onclick="quero('produto1'), atualizarNumeroItensCarrinho()" class="quero">
+            Quero!
+          </button>
+        </div>
       </div>
-    </div>
 
-    <div class="produtos">
-      <div>
-        <img src="./img/prod2.PNG" alt="corrente">
-      </div>
-      <div class="descprod">
-        <h1 style="color: #410287;">LOREM IPSUM</h1>
-        <h2 style="color: #946DBF;">R$ 99,99</h2>
-        <p style="color: #7335A0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur, mi nec
-          efficitur lacinia, dui dolor
-          malesuada magna, in viverra nulla orci in neque. Donec lobortis dui pellentesque lorem aliquam, non ornare
-          metus
-          ultrices. Sed tempus, lacus ut bibendum vulputate, nisi lectus dapibus ipsum, quis vestibulum nunc libero id
-          urna.</p>
+      <div class="produtos">
         <div>
+          <img src="./img/prod2.PNG" alt="corrente">
         </div>
-        <button class="quero">
-          Quero!
-        </button>
-      </div>
-
-    </div>
+        <div class="descprod">
+          <h1 style="color: #410287;">LOREM IPSUM</h1>
+          <h2 style="color: #946DBF;">R$ 99,99</h2>
+          <p style="color: #7335A0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam efficitur, mi nec
+            efficitur lacinia, dui dolor
+            malesuada magna, in viverra nulla orci in neque. Donec lobortis dui pellentesque lorem aliquam, non ornare
+            metus
+            ultrices. Sed tempus, lacus ut bibendum vulputate, nisi lectus dapibus ipsum, quis vestibulum nunc libero id
+            urna.</p>
+          <div>
+          </div>
+          <button id="produto2" onclick="quero('produto2'), atualizarNumeroItensCarrinho()" class="quero">
+            Quero!
+          </button>
+        </div>
+  </main>
 
   </div>
 
+  <section>
+    <h1 class="titulo-secao">CONFIRA TAMBÉM!</h1>
+    <div class="confiramais">
+      <div>
+        <img src="./img/prod2.PNG" alt="corrente">
+        <h2>Produto 1</h2>
+        <p>Descrição do Produto 1.</p>
+        <button id="produto3" onclick="quero('produto3'), atualizarNumeroItensCarrinho()" class="quero">
+          Eu Quero!
+        </button>
+        <h3>R$ 99,99</h3>
+      </div>
+      <div>
+        <img src="./img/prod2.PNG" alt="corrente">
+        <h2>Produto 2</h2>
+        <p>Descrição do Produto 2.</p>
+        <button id="produto4" onclick="quero('produto4'), atualizarNumeroItensCarrinho()" class="quero">
+          Eu Quero!
+        </button>
+        <h3>R$ 99,99</h3>
+      </div>
+      <div>
+        <img src="./img/prod2.PNG" alt="corrente">
+        <h2>Produto 3</h2>
+        <p>Descrição do Produto 3.</p>
+        <button id="produto5" onclick="quero('produto5'), atualizarNumeroItensCarrinho()" class="quero">
+          Eu Quero!
+        </button>
+        <h3>R$ 99,99</h3>
+      </div>
+      <div>
+        <img src="./img/prod2.PNG" alt="corrente">
+        <h2>Produto 4</h2>
+        <p>Descrição do Produto 4.</p>
+        <button id="produto6" onclick="quero('produto6'), atualizarNumeroItensCarrinho()" class="quero">
+          Eu Quero!
+        </button>
+        <h3>R$ 99,99</h3>
+      </div>
+    </div>
+  </section>
+
+  <a href="#" class="floating-button" id="carrinhoButton">
+    <img src="./img/carrinho.svg" alt="Carrinho">
+    <span id="carrinhoCount"></span>
+  </a>
 
 </body>
 

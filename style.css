@@ -1,6 +1,8 @@
 body {
+  zoom: 0.8;
   background-color: whitesmoke;
   font-family: "inter";
+  margin-top: 0px;
   margin: 0px;
   padding: 0px;
   margin-bottom: 75px;
@@ -8,6 +10,7 @@ body {
 
 header {
   position: fixed;
+  top: 0;
   width: 100%;
   display: flex;
   align-items: center;
@@ -16,6 +19,7 @@ header {
 }
 header li {
   font-size: larger;
+  margin-bottom: 30px;
 }
 
 .menu {
@@ -29,15 +33,42 @@ header li {
   padding: 5px;
 }
 
+.titulo-secao {
+  font-weight: bolder;
+  margin: 150px 20px 0px 0px;
+  font-size: 48px;
+  color: #410187;
+  text-align: center;
+}
+
 .produtos {
-  padding-top: 180px;
   display: grid;
   grid-template-columns: 100fr 60fr;
+  margin-top: 100px;
   margin-left: 150px;
   margin-right: 150px;
+  cursor: default;
 }
 .produtos img {
   width: 95%;
+}
+
+.confiramais {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 75px;
+}
+
+.confiramais > div {
+  width: 23%;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .confiramais > div {
+    width: 48%;
+  }
 }
 
 .quero {
@@ -52,10 +83,12 @@ header li {
   align-items: center;
   gap: 12px;
   font-size: larger;
+  cursor: grab;
 }
 
 .descprod {
-  padding: 0px 20px;
+  padding: 20px 20px 0 20px;
+  margin: 20px 20px 0 20px;
 }
 .descprod h1 {
   font-size: 48px;
@@ -68,4 +101,48 @@ header li {
 .descprod p {
   margin: 30px 0px 100px 0px;
   font-size: 20px;
+}
+
+.floating-button {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: #7e33b7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
+  z-index: 999;
+  transition: background-color 0.3s;
+  transform: scale(1.3);
+}
+
+.floating-button img {
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+
+.floating-button:hover {
+  background-color: #410287;
+}
+
+#carrinhoCount {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: right;
+  justify-content: right;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
 }
