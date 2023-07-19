@@ -17,6 +17,7 @@ header {
   justify-content: space-between;
   background-color: whitesmoke;
 }
+
 header li {
   font-size: larger;
   margin-bottom: 30px;
@@ -26,6 +27,7 @@ header li {
   display: flex;
   color: #410187;
 }
+
 .menu li {
   border: 0px solid red;
   list-style: none;
@@ -35,7 +37,7 @@ header li {
 
 .titulo-secao {
   font-weight: bolder;
-  margin: 150px 20px 0px 0px;
+  margin: 20vh 20px 0px 0px;
   font-size: 48px;
   color: #410187;
   text-align: center;
@@ -44,11 +46,12 @@ header li {
 .produtos {
   display: grid;
   grid-template-columns: 100fr 60fr;
-  margin-top: 100px;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-top: 10vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
   cursor: default;
 }
+
 .produtos img {
   width: 95%;
 }
@@ -57,7 +60,7 @@ header li {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-top: 75px;
+  margin-top: 10vh;
 }
 
 .confiramais > div {
@@ -90,25 +93,37 @@ header li {
   padding: 20px 20px 0 20px;
   margin: 20px 20px 0 20px;
 }
+
 .descprod h1 {
   font-size: 48px;
   margin: 0px;
 }
+
 .descprod h2 {
   margin: 0px;
   font-size: 36px;
 }
+
 .descprod p {
   margin: 30px 0px 100px 0px;
   font-size: 20px;
 }
 
+.descricao-produto {
+  max-height: 100px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+}
+
 .floating-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
+  bottom: 5vh;
+  right: 5vw;
+  width: 10vw;
+  height: 10vw;
   border-radius: 50%;
   background-color: #7e33b7;
   display: flex;
@@ -117,12 +132,12 @@ header li {
   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.3);
   z-index: 999;
   transition: background-color 0.3s;
-  transform: scale(1.3);
+  transform: scale(1);
 }
 
 .floating-button img {
-  width: 32px;
-  height: 32px;
+  width: 5vw;
+  height: 5vw;
   color: white;
 }
 
@@ -137,12 +152,12 @@ header li {
   background-color: red;
   color: white;
   border-radius: 50%;
-  width: 20px;
-  height: 20px;
+  width: 2vw;
+  height: 2vw;
   display: flex;
-  align-items: right;
-  justify-content: right;
-  font-size: 16px;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6vw;
   font-weight: bold;
-  line-height: 20px;
+  line-height: 2vw;
 }
